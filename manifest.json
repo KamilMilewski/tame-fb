@@ -1,0 +1,11 @@
+{ 
+  "name": "Tame-FB Chromium extension",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [{
+    "matches": ["https://*.facebook.com/*"],
+    "js": ["jquery-1.7.1.min.js", "content.js"],
+    "run_at": "document_end"
+  }],
+  "web_accessible_resources": ["script.js"]
+}
